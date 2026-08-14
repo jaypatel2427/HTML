@@ -1,0 +1,112 @@
+/* ===== Basic Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Background Image ===== */
+body {
+    min-height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrnoeCDSTNv_vdY7dQ3yRL9g0bGCq9ZsTFWUiki63hrQ&s");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Dark overlay on background using a wrapper */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* ===== White Card ===== */
+#container {
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* ===== Heading ===== */
+#title {
+    text-align: center;
+    color: #14532d; /* dark green */
+    font-size: 24px;
+}
+
+#line {
+    text-align: center;
+    color: #14532d;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ===== Form Layout (2 columns) ===== */
+#jobForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* ===== Inputs, Select, Textarea ===== */
+#jobForm input,
+#jobForm select,
+#jobForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #16a34a; /* green border */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+/* Message box takes full width (both columns) */
+#message {
+    grid-column: 1 / -1;
+    resize: vertical;
+}
+
+/* ===== CV Upload Row ===== */
+#cvLabel {
+    grid-column: 1 / -1;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cv {
+    border: none;
+}
+
+/* ===== Apply Button ===== */
+#applyBtn {
+    grid-column: 1 / -1;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1f1f1f, #14532d);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#applyBtn:hover {
+    opacity: 0.9;
+}

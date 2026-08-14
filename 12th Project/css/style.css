@@ -1,0 +1,31 @@
+img {
+    width: 150px;
+    float: left;
+    margin-left: 100px;
+}
+input {
+    background-color: gainsboro;
+    border: none;
+    width: 400px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+button {
+    background-color: rgb(225, 43, 74);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+span {
+    background-color : white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    float: right;
+}

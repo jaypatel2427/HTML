@@ -1,0 +1,17 @@
+body{
+    background:peachpuff;
+}
+h1{
+    color: red;
+}
+h2{
+    text-decoration: underline;
+}
+ul{
+    font-family: 'Courier New', Courier, monospace;
+   list-style-type: none;
+}
+p{
+    color: gray;
+    text-size-adjust: 3px;
+}
